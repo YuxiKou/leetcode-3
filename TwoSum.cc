@@ -20,7 +20,7 @@ class Solution {
     vector<int> result(2, 0);
     for(vector<int>::size_type i = 0; i < numbers.size(); ++ i)
     {
-      if(hash[target-numbers[i]] >= 0)
+      if(hash[target-numbers[i]] > 0)
       {
         result[0] = hash[target-numbers[i]];
         result[1] = i + 1;
