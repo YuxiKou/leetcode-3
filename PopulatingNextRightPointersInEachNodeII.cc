@@ -54,6 +54,7 @@ struct TreeLinkNode
   TreeLinkNode(int x) : val(x), left(NULL), right(NULL), next(NULL) {}
 };
 
+//algorithm
 class Solution {
  public:
   void connect(TreeLinkNode *root) {

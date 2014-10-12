@@ -11,8 +11,10 @@ class Solution {
     if(n < 1) return;
     int indexA = m - 1;
     int indexB = n - 1;
+    //exit condition
     for(int i = m + n - 1; i > -1 && indexB > -1; --i)
     {
+      //important condition, differentiate A and B
       if(indexA < 0 || A[indexA] < B[indexB])
       {
         A[i] = B[indexB];

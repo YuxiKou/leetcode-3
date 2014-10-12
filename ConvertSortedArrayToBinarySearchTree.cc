@@ -13,14 +13,12 @@ class Solution {
  public:
   TreeNode *sortedArrayToBST(std::vector<int> &num)
   {
-    if(num.size() == 0) return NULL;
-    return sortedArrayToBSTPrivate(num, 0, num.size() - 1);
+      return sortedArrayToBSTPrivate(num, 0, num.size() - 1);
   }
 
   TreeNode *sortedArrayToBSTPrivate(std::vector<int> &num, int start, int end)
   {
     if(start > end) return NULL;
-    if(start == end) return new TreeNode(num[start]);
     int mid = start + (end - start) / 2;
     TreeNode *root = new TreeNode(num[mid]);
     root->left = sortedArrayToBSTPrivate(num, start, mid - 1);

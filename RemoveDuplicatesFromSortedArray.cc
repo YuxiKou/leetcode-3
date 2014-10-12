@@ -9,6 +9,7 @@
   Your function should return length = 2, and A is now [1,2].
 */
 
+//boundary condition
 class Solution {
  public:
   int removeDuplicates(int A[], int n) {

@@ -16,7 +16,7 @@
   [5,8,4,5]
   ]
 */
-
+/*permutation*/
 
 #include <vector>
 

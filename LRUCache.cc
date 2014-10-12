@@ -50,6 +50,7 @@ class LRUCache{
   list<CacheNode> cache;
   unordered_map<int, list<CacheNode>::iterator> map;
 
+  //************ use of erase and update pointer
   void updateRecent(int k)
   {
     CacheNode node = *map[k];

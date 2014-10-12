@@ -14,7 +14,8 @@
 
 /*
   recursion, need pass two values:
-  sum: the maximum from sub path. the max between root->val, root->val + leftMax, root->val + rightMax
+  sum: the maximum from sub path, must start with root node. 
+        the max between root->val, root->val + leftMax, root->val + rightMax
   max: the max between sum and root->val + leftMax + rightMax
  */
 

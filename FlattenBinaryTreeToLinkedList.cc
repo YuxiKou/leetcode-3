@@ -38,10 +38,12 @@ class Solution {
     flat(root);
   }
 
+  //this method returns the last node of the generated linked list
   TreeNode* flat(TreeNode* root)
   {
     if(root == NULL) return NULL;
     if(root->left == NULL && root->right == NULL) return root;
+    //flat right subtree first
     TreeNode* lastRight = flat(root->right);
     TreeNode* lastLeft;
     if(root->left != NULL)

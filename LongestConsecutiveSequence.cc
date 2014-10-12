@@ -19,6 +19,7 @@ class Solution {
     int max = 1;
     for(int i = 0; i < num.size(); ++i)
     {
+      //eliminates duplicates
       if(map[num[i]] > 0) continue;
       map[num[i]] = 1;
       if(map[num[i] - 1] > 0)

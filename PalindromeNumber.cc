@@ -2,7 +2,7 @@
   Determine whether an integer is a palindrome. Do this without extra space.
 */
 
-//algorithm
+//algorithm. also look at K-M-P algorithm. Need to remember this!!!
 class Solution {
  public:
   bool isPalindrome(int x) {

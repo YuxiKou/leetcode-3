@@ -52,6 +52,7 @@ class Solution {
       nodes.push_back(curNode->left);
       nodes.push_back(curNode->right);
       if(prevNode != NULL) prevNode->next = curNode;
+      //the use of level counter!!!
       --levelCounter;
       if(levelCounter == 0)
       {

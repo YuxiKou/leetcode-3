@@ -31,6 +31,7 @@ class Solution {
         last->next = NULL;
       }
     }
+    //don't forget to handle leftovers
     if(l1 != NULL) last->next = l1;
     if(l2 != NULL) last->next = l2;
     return head->next;
