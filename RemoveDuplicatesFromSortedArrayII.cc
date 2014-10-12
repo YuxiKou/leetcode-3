@@ -15,6 +15,14 @@ class Solution {
     int length = 0;
     int curIndex = 0;
     int i;
+
+    /*
+      1      1      2     2      2      2      2      3
+                                                              n
+                                                      cur
+                                        i
+                                 length
+     */
     while(curIndex < n)
     {
       i = curIndex ++;

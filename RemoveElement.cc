@@ -3,6 +3,7 @@
 
   The order of elements can be changed. It doesn't matter what you leave beyond the new length.
 */
+#include <iostream>
 
 class Solution
 {
@@ -20,9 +21,7 @@ class Solution
         --length;
       }
       if(index1 >= index2) return length;
-      int temp = A[index1];
-      A[index1] = A[index2];
-      A[index2] = temp;
+      std::swap(A[index1], A[index2]);
     }
     return length;
   }

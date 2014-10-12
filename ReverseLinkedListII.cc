@@ -17,7 +17,7 @@
   note:
 
   reverse exit condition:
-    if(head == NULL || length <= 1) return head;
+  if(head == NULL || length <= 1) return head;
 */
 #include <stack>
 
@@ -26,20 +26,29 @@ struct ListNode {
   ListNode *next;
   ListNode(int x) : val(x), next(NULL) {}
 };
+
 class Solution {
-public:
+ public:
   ListNode *reverseBetween(ListNode *head, int m, int n) {
     ListNode *newHead = new ListNode(0);
     newHead->next = head;
     ListNode *curNode = newHead;
-    for(int i = 0; i < m - 1; ++i) {
+    /*
+      m = 2, n = 4
+      0       1       2       3       4       5
+              cur
+     */
+    for(int i = 0; i < m - 1; ++i)
+    {
       curNode = curNode->next;
     }
 
     curNode->next = reverse(curNode->next, n - m + 1);
     return newHead->next;
   }
-  ListNode *reverse(ListNode *head, int length) {
+  //algorithm to reverse linked list with certain length
+  ListNode *reverse(ListNode *head, int length)
+  {
     if(head == NULL || length <= 1) return head;
     ListNode *lastNode = head->next;
     ListNode *newHead = reverse(head->next, length - 1);

@@ -19,6 +19,11 @@ class Solution {
   {
     ListNode *curStart = head;
     ListNode *curNode = curStart;
+    /*
+      1      2      2      2
+             cs
+                    cn
+     */
     while(curStart != NULL)
     {
       curNode = curNode->next;

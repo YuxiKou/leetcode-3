@@ -11,7 +11,10 @@
    2     1         2                 3
 
 */
+/*
+  algorithm
 
+ */
 #include <vector>
 
 using namespace std;
@@ -30,6 +33,7 @@ class Solution {
   }
   vector<TreeNode *> * gen(int start, int end)
   {
+    // returns pointer
     vector<TreeNode *>* ret = new vector<TreeNode *>();
     if(start > end)
     {
